@@ -1,0 +1,107 @@
+*{
+    margin:0;   /* removes default margin*/
+    padding:0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(restuarant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* image covers the entire container and prevent image repetition and position image at the centre*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color:darksalmon;
+    font-size: 20px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    color: darkslateblue
+    
+}
+
+
+
+
+nav li{ 
+    
+    display:inline-block; /* allows to display in the same line */
+    margin:0 8px;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0 26px;
+    text-decoration:none; /* removing the underline from the anchor tag elements */
+    display:flex;
+    align-items: center;
+    color:black;
+}
+
+.logo{
+    font-size:36px;
+    font-weight:bolder;
+}
+
+
+nav a:hover{
+    color:whitesmoke;
+} /* we add the hover effect to the anchor text to change the background color to grey creating visual feedback*/
+
+.menu a{
+    margin-bottom: 3px;
+    justify-content: center;
+    margin:0px 0px 10px 0px;
+    
+} 
+
+.menu{
+    cursor:pointer;
+    display:none;
+
+}
+
+@media all and (max-width:740px){
+    nav{
+        flex-direction:column
+    }
+
+    nav li{
+        display:block;
+        padding:10px 0;
+    }
+
+    ul{
+        text-align:center;
+        padding:0;
+        display:none;
+        
+    }
+
+    .logo{
+        align-self:flex-start;
+        margin:10px 0px 0px 30px;
+    }
+
+    .menu{
+        display:block;
+        position:absolute;
+        right:20px;
+        top:25px;
+    }
+
+    .showmenu{
+        display:block;
+    }
+
+
+
+
+
+}
+
+
